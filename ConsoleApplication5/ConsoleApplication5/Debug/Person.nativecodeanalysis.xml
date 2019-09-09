@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
+      <FILENAME>Person.h</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'classification' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>Person::{ctor}</FUNCTION>
+    <DECORATED>??0Person@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0W4classification@@@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
+      <FILENAME>Person.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Person::getClassification' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Person::getClassification</FUNCTION>
+    <DECORATED>?getClassification@Person@@QAE?AW4classification@@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
+      <FILENAME>Person.cpp</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Person::{ctor}</FUNCTION>
+    <DECORATED>??0Person@@QAE@XZ</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

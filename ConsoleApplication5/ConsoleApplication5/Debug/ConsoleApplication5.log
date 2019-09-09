@@ -1,0 +1,33 @@
+﻿  Bus.cpp
+  ConsoleApplication5.cpp
+  Driver.cpp
+  Passenger.cpp
+  Person.cpp
+  Row.cpp
+  Seat.cpp
+  Source.cpp
+  Compiling...
+  Generating Code...
+  ConsoleApplication5.vcxproj -> C:\Users\nicku\source\repos\ConsoleApplication5\Debug\ConsoleApplication5.exe
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Person.h(16): warning C26812: The enum type 'classification' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Bus.cpp(9): warning C26440: Function 'Bus::getCapacity' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Bus.cpp(18): warning C26486: Don't pass a pointer that may be invalid to a function. Parameter 0 '@(temporary 2)' in call to 'Seat::Seat' may be invalid (lifetime.3).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Bus.cpp(25): warning C26440: Function 'Bus::getNumRows' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Bus.cpp(32): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Bus.cpp(37): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Bus.cpp(40): warning C26495: Variable 'Bus::numRows' is uninitialized. Always initialize a member variable (type.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Bus.cpp(51): warning C26486: Don't pass a pointer that may be invalid to a function. Parameter 0 '@(temporary 1)' in call to 'Seat::Seat' may be invalid (lifetime.3).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(10): warning C26814: The const variable 'areaThreshold' can be computed at compile-time. Consider using constexpr (con.5).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(18): warning C26440: Function 'Circle::setRadius' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(23): warning C26496: The variable 'power' is assigned only once, mark it as const (con.4).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(22): warning C26440: Function 'Circle::getArea' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Driver.cpp(3): warning C26440: Function 'Driver::getYearsExperience' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Driver.cpp(8): warning C26440: Function 'Driver::getHoursOfSleep' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Passenger.cpp(3): warning C26440: Function 'Passenger::getHasTicket' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Person.cpp(8): warning C26440: Function 'Person::getClassification' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Person.cpp(13): warning C26455: Default constructor may not throw. Declare it 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Row.cpp(3): warning C26440: Function 'Row::getRowCapacity' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Row.cpp(15): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Row.cpp(20): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Seat.cpp(16): warning C26440: Function 'Seat::isOccupied' can be declared 'noexcept' (f.6).
+C:\Users\nicku\source\repos\ConsoleApplication5\ConsoleApplication5\Seat.cpp(21): warning C26455: Default constructor may not throw. Declare it 'noexcept' (f.6).
