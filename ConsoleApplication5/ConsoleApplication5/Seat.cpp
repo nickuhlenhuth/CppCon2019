@@ -1,6 +1,6 @@
 #include "Seat.h"
 
-void Seat::seatPassenger(Passenger p)
+void Seat::seatPassenger(Person p)
 {
 	occupied = true;
 	occupant = p;

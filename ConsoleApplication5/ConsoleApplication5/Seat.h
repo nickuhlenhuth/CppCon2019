@@ -1,15 +1,18 @@
 #pragma once
-#include "Passenger.h"
+#include "Person.h"
 #include <optional>
 class Seat
 {
 private:
 	bool occupied = false;
-	std::optional<Passenger> occupant;
+	std::optional<Person> occupant;
 public:
-	void seatPassenger(Passenger p);
+	void seatPassenger(Person p);
 	void removePassenger();
 	bool isOccupied();
+	operator bool() {
+		return occupied;
+	}
 	Seat();
 };
 

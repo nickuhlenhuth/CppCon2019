@@ -5,12 +5,12 @@ int Row::getRowCapacity()
 	return rowCapacity;
 }
 
-std::vector<Seat> Row::getSeats()
+std::vector<Seat>& Row::getSeats()
 {
 	return seats;
 }
 
-void Row::occupy(int seat, Passenger p)
+void Row::occupy(int seat, Person p)
 {
 	seats[seat].seatPassenger(p);
 }

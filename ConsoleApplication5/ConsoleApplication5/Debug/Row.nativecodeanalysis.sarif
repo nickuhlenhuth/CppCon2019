@@ -5,24 +5,24 @@
     {
       "results": [
         {
-          "ruleId": "26812",
+          "ruleId": "26440",
           "message": {
-            "text": "The enum type 'classification' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+            "text": "Function 'Seat::operator bool' can be declared 'noexcept' (f.6)."
           },
           "locations": [
             {
               "physicalLocation": {
                 "fileLocation": {
-                  "uri": "file:///C:/Users/nicku/source/repos/ConsoleApplication5/ConsoleApplication5/Person.h"
+                  "uri": "file:///C:/Users/nicku/Desktop/CppCon2019/ConsoleApplication5/ConsoleApplication5/Seat.h"
                 },
                 "region": {
-                  "startLine": 16,
+                  "startLine": 13,
                   "startColumn": 2,
-                  "endLine": 16,
+                  "endLine": 13,
                   "endColumn": 2
                 }
               },
-              "fullyQualifiedLogicalName": "public: __thiscall Person::Person(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,enum classification)"
+              "fullyQualifiedLogicalName": "public: __thiscall Seat::operator bool(void)"
             }
           ]
         },
@@ -35,7 +35,7 @@
             {
               "physicalLocation": {
                 "fileLocation": {
-                  "uri": "file:///C:/Users/nicku/source/repos/ConsoleApplication5/ConsoleApplication5/Row.cpp"
+                  "uri": "file:///C:/Users/nicku/Desktop/CppCon2019/ConsoleApplication5/ConsoleApplication5/Row.cpp"
                 },
                 "region": {
                   "startLine": 3,
@@ -49,24 +49,24 @@
           ]
         },
         {
-          "ruleId": "26446",
+          "ruleId": "26440",
           "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+            "text": "Function 'Row::getSeats' can be declared 'noexcept' (f.6)."
           },
           "locations": [
             {
               "physicalLocation": {
                 "fileLocation": {
-                  "uri": "file:///C:/Users/nicku/source/repos/ConsoleApplication5/ConsoleApplication5/Row.cpp"
+                  "uri": "file:///C:/Users/nicku/Desktop/CppCon2019/ConsoleApplication5/ConsoleApplication5/Row.cpp"
                 },
                 "region": {
-                  "startLine": 15,
-                  "startColumn": 2,
-                  "endLine": 15,
-                  "endColumn": 12
+                  "startLine": 8,
+                  "startColumn": 25,
+                  "endLine": 8,
+                  "endColumn": 25
                 }
               },
-              "fullyQualifiedLogicalName": "public: void __thiscall Row::occupy(int,class Passenger)"
+              "fullyQualifiedLogicalName": "public: class std::vector<class Seat,class std::allocator<class Seat> > & __thiscall Row::getSeats(void)"
             }
           ]
         },
@@ -79,7 +79,29 @@
             {
               "physicalLocation": {
                 "fileLocation": {
-                  "uri": "file:///C:/Users/nicku/source/repos/ConsoleApplication5/ConsoleApplication5/Row.cpp"
+                  "uri": "file:///C:/Users/nicku/Desktop/CppCon2019/ConsoleApplication5/ConsoleApplication5/Row.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 2,
+                  "endLine": 15,
+                  "endColumn": 12
+                }
+              },
+              "fullyQualifiedLogicalName": "public: void __thiscall Row::occupy(int,class Person)"
+            }
+          ]
+        },
+        {
+          "ruleId": "26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "file:///C:/Users/nicku/Desktop/CppCon2019/ConsoleApplication5/ConsoleApplication5/Row.cpp"
                 },
                 "region": {
                   "startLine": 20,
@@ -101,55 +123,34 @@
       },
       "invocations": [
         {
-          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00653180 -il C:\\Users\\nicku\\AppData\\Local\\Temp\\_CL_97436867ast -typedil -f Row.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1923 -D_MSC_FULL_VER=192328019 -D_MSC_BUILD=1 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\nicku\\Documents\\vcpkg\\installed\\x86-windows\\include -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++17 -FoDebug\\Row.obj -FdDebug\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset demoRuleset.ruleset -analyze:projectdirectory C:\\Users\\nicku\\source\\repos\\ConsoleApplication5\\ConsoleApplication5 -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\nicku\\source\\repos\\ConsoleApplication5\\ConsoleApplication5\\Include\\um"
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x004A3180 -il C:\\Users\\nicku\\AppData\\Local\\Temp\\_CL_f33863ccast -typedil -f Row.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1923 -D_MSC_FULL_VER=192328019 -D_MSC_BUILD=1 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\nicku\\Documents\\vcpkg\\installed\\x86-windows\\include -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++17 -FoDebug\\Row.obj -FdDebug\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset demoRuleset.ruleset -analyze:projectdirectory C:\\Users\\nicku\\Desktop\\CppCon2019\\ConsoleApplication5\\ConsoleApplication5 -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\nicku\\Desktop\\CppCon2019\\ConsoleApplication5\\ConsoleApplication5\\Include\\um"
         }
       ],
       "files": {
-        "file:///c:/users/nicku/source/repos/consoleapplication5/consoleapplication5/driver.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/nicku/source/repos/consoleapplication5/consoleapplication5/source.cpp": {
+        "file:///c:/users/nicku/desktop/cppcon2019/consoleapplication5/consoleapplication5/seat.cpp": {
           "roles": [
             "analysisTarget",
             "resultFile"
           ]
         },
-        "file:///c:/users/nicku/source/repos/consoleapplication5/consoleapplication5/person.h": {
+        "file:///c:/users/nicku/desktop/cppcon2019/consoleapplication5/consoleapplication5/seat.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/nicku/source/repos/consoleapplication5/consoleapplication5/bus.h": {
+        "file:///c:/users/nicku/desktop/cppcon2019/consoleapplication5/consoleapplication5/person.h": {
           "roles": [
             "resultFile"
           ]
         },
-        "file:///c:/users/nicku/source/repos/consoleapplication5/consoleapplication5/passenger.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/nicku/source/repos/consoleapplication5/consoleapplication5/row.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/nicku/source/repos/consoleapplication5/consoleapplication5/seat.h": {
-          "roles": [
-            "resultFile"
-          ]
-        },
-        "file:///c:/users/nicku/source/repos/consoleapplication5/consoleapplication5/seat.cpp": {
+        "file:///c:/users/nicku/desktop/cppcon2019/consoleapplication5/consoleapplication5/row.cpp": {
           "roles": [
             "analysisTarget",
             "resultFile"
           ]
         },
-        "file:///c:/users/nicku/source/repos/consoleapplication5/consoleapplication5/row.cpp": {
+        "file:///c:/users/nicku/desktop/cppcon2019/consoleapplication5/consoleapplication5/row.h": {
           "roles": [
-            "analysisTarget",
             "resultFile"
           ]
         }
