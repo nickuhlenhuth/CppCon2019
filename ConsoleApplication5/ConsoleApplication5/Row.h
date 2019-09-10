@@ -6,7 +6,7 @@
 class Row
 {
 private:
-	int rowCapacity = 3;
+	const int rowCapacity = 3;
 	int rowNumber;
 	std::vector<Seat> seats;
 public:

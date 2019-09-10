@@ -21,7 +21,7 @@ int main()
 
 	Driver d;
 	Captain c{ 6 };
-	d.captain = c;
+	d.captain = &c;
 	bus.assignDriver(d);
 
 	Person p1{ "Tim", "Johnson" };
@@ -39,11 +39,12 @@ int main()
 	std::cout << "Removed Sally from the bus!" << "\n";
 
 	Robot r{ 42 };
-	d.robot = r;
+	d.robot = &r;
 	bus.assignDriver(d);
 	std::cout << "Driver is " << bus.getDriverNumber(robotDriver) << "\n";
 
 	bus.printBus();
+	bus.printBusToFile();
 	std::cout << "\n";
 	std::cout << bus.averagePassengersPerRow();
 	

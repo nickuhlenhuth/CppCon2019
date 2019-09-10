@@ -3,34 +3,6 @@
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
-      <FILENAME>Seat.h</FILENAME>
-      <LINE>13</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'Seat::operator bool' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>Seat::operator bool</FUNCTION>
-    <DECORATED>??BSeat@@QAE_NXZ</DECORATED>
-    <FUNCLINE>13</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
-      <FILENAME>Seat.cpp</FILENAME>
-      <LINE>16</LINE>
-      <COLUMN>11</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'Seat::isOccupied' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>Seat::isOccupied</FUNCTION>
-    <DECORATED>?isOccupied@Seat@@QAE_NXZ</DECORATED>
-    <FUNCLINE>16</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Seat.cpp</FILENAME>
       <LINE>21</LINE>
       <COLUMN>6</COLUMN>

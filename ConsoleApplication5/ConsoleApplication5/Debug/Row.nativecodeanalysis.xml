@@ -3,48 +3,6 @@
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
-      <FILENAME>Seat.h</FILENAME>
-      <LINE>13</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'Seat::operator bool' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>Seat::operator bool</FUNCTION>
-    <DECORATED>??BSeat@@QAE_NXZ</DECORATED>
-    <FUNCLINE>13</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
-      <FILENAME>Row.cpp</FILENAME>
-      <LINE>3</LINE>
-      <COLUMN>9</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'Row::getRowCapacity' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>Row::getRowCapacity</FUNCTION>
-    <DECORATED>?getRowCapacity@Row@@QAEHXZ</DECORATED>
-    <FUNCLINE>3</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
-      <FILENAME>Row.cpp</FILENAME>
-      <LINE>8</LINE>
-      <COLUMN>24</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'Row::getSeats' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>Row::getSeats</FUNCTION>
-    <DECORATED>?getSeats@Row@@QAEAAV?$vector@VSeat@@V?$allocator@VSeat@@@std@@@std@@XZ</DECORATED>
-    <FUNCLINE>8</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Row.cpp</FILENAME>
       <LINE>15</LINE>
       <COLUMN>11</COLUMN>
@@ -68,6 +26,20 @@
     <FUNCTION>Row::remove</FUNCTION>
     <DECORATED>?remove@Row@@QAEXH@Z</DECORATED>
     <FUNCLINE>18</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
+      <FILENAME>Row.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26814</DEFECTCODE>
+    <DESCRIPTION>The const variable 'Row::rowCapacity' can be computed at compile-time. Consider using constexpr (con.5).</DESCRIPTION>
+    <FUNCTION>Row::{ctor}</FUNCTION>
+    <DECORATED>??0Row@@QAE@H@Z</DECORATED>
+    <FUNCLINE>23</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

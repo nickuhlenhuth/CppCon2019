@@ -6,6 +6,8 @@
 #include "Captain.h"
 #include "Engine.h"
 #include <numeric>
+#include <fstream>
+#include <cassert>
 
 #define AVERAGE(range) std::accumulate(std::begin(range), std::end(range), 0.0f) / range.size()
 
@@ -13,15 +15,14 @@ enum EngineType { small, medium, large };
 
 enum DriverType {robotDriver, captainDriver};
 union Driver {
-	Robot robot;
-	Captain captain;
+	Robot* robot;
+	Captain* captain;
 };
 
 
 class Bus
 {
-	//std::optional<Driver> driver;
-	Driver driver;
+	Driver* driver;
 	int capacity;
 	int numRows;
 	std::vector<Row> rows;
@@ -49,9 +50,9 @@ public:
 	~Bus() {
 		delete engine;
 	}
-	void assignDriver(Driver d)
+	void assignDriver(Driver& d)
 	{
-		driver = d;
+		driver = &d;
 	}
 	int getCapacity()
 	{
@@ -91,15 +92,30 @@ public:
 		}
 	}
 
+	void printBusToFile() {
+		std::ofstream myfile("C:\\Users\\nicku\\Desktop\\CppCon2019_demo_output\\output.txt");
+		for (auto row : rows) {
+			for (auto seat : row.getSeats()) {
+				if (seat.isOccupied()) {
+					myfile << "X ";
+				}
+				else {
+					myfile << "- ";
+				}
+			}
+			myfile << "\n";
+		}
+	}
+
+
 	int getDriverNumber(DriverType dt) {
 		switch (dt) {
 		case robotDriver:
-			return driver.robot.robotID;
-			break;
+			return driver->robot->robotID;
 		case captainDriver:
-			return driver.captain.badgeNumber;
-			break;
+			return driver->captain->badgeNumber;
 		}
 	}
+
 
 };
