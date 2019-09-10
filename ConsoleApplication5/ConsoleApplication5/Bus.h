@@ -14,14 +14,14 @@ enum EngineType { small, medium, large };
 
 enum DriverType {robotDriver, captainDriver};
 union Driver {
-	Robot* robot;
-	Captain* captain;
+	Robot robot;
+	Captain captain;
 };
 
 
 class Bus
 {
-	Driver* driver;
+	Driver driver;
 	int capacity;
 	int numRows;
 	std::vector<Row> rows;
@@ -49,9 +49,9 @@ public:
 	~Bus() {
 		delete engine;
 	}
-	void assignDriver(Driver& d)
+	void assignDriver(Driver d)
 	{
-		driver = &d;
+		driver = d;
 	}
 	int getCapacity()
 	{
@@ -110,9 +110,9 @@ public:
 	int getDriverNumber(DriverType dt) {
 		switch (dt) {
 		case robotDriver:
-			return driver->robot->robotID;
+			return driver.robot.robotID;
 		case captainDriver:
-			return driver->captain->badgeNumber;
+			return driver.captain.badgeNumber;
 		}
 	}
 

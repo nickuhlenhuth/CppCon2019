@@ -2,16 +2,6 @@
 #include "Person.h"
 #include "Bus.h"
 
-
-//make Row getSeats return by ref
-//store some fields as pointers -> new/delete
-//create a macro of a function
-
-//template argument deduction?
-// selection initialization
-// turn union into a variant?
-
-
 int main()
 {
 	std::cout << "Hello CppCon 2019!\n";
@@ -21,7 +11,7 @@ int main()
 
 	Driver d;
 	Captain c{ 6 };
-	d.captain = &c;
+	d.captain = c;
 	bus.assignDriver(d);
 
 	Person p1{ "Tim", "Johnson" };
@@ -39,7 +29,7 @@ int main()
 	std::cout << "Removed Sally from the bus!" << "\n";
 
 	Robot r{ 42 };
-	d.robot = &r;
+	d.robot = r;
 	bus.assignDriver(d);
 	std::cout << "Driver is Robot " << bus.getDriverNumber(robotDriver) << "\n";
 
