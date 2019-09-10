@@ -3,10 +3,11 @@
 #include "Seat.h"
 #include <numeric>
 
+const int rowCapacity = 3;
+
 class Row
 {
 private:
-	const int rowCapacity = 3;
 	int rowNumber;
 	std::vector<Seat> seats;
 public:

@@ -3,78 +3,92 @@
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
+      <FILENAME>Row.h</FILENAME>
+      <LINE>6</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>26814</DEFECTCODE>
+    <DESCRIPTION>The const variable 'rowCapacity' can be computed at compile-time. Consider using constexpr (con.5).</DESCRIPTION>
+    <FUNCTION></FUNCTION>
+    <DECORATED></DECORATED>
+    <FUNCLINE>0</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Bus.h</FILENAME>
-      <LINE>32</LINE>
+      <LINE>31</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26812</DEFECTCODE>
     <DESCRIPTION>The enum type 'EngineType' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
     <FUNCTION>Bus::{ctor}</FUNCTION>
     <DECORATED>??0Bus@@QAE@HW4EngineType@@@Z</DECORATED>
-    <FUNCLINE>32</FUNCLINE>
+    <FUNCLINE>31</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Bus.h</FILENAME>
-      <LINE>36</LINE>
+      <LINE>35</LINE>
       <COLUMN>12</COLUMN>
     </SFA>
     <DEFECTCODE>26409</DEFECTCODE>
     <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
     <FUNCTION>Bus::{ctor}</FUNCTION>
     <DECORATED>??0Bus@@QAE@HW4EngineType@@@Z</DECORATED>
-    <FUNCLINE>32</FUNCLINE>
+    <FUNCLINE>31</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Bus.h</FILENAME>
-      <LINE>39</LINE>
+      <LINE>38</LINE>
       <COLUMN>12</COLUMN>
     </SFA>
     <DEFECTCODE>26409</DEFECTCODE>
     <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
     <FUNCTION>Bus::{ctor}</FUNCTION>
     <DECORATED>??0Bus@@QAE@HW4EngineType@@@Z</DECORATED>
-    <FUNCLINE>32</FUNCLINE>
+    <FUNCLINE>31</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Bus.h</FILENAME>
-      <LINE>42</LINE>
+      <LINE>41</LINE>
       <COLUMN>12</COLUMN>
     </SFA>
     <DEFECTCODE>26409</DEFECTCODE>
     <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
     <FUNCTION>Bus::{ctor}</FUNCTION>
     <DECORATED>??0Bus@@QAE@HW4EngineType@@@Z</DECORATED>
-    <FUNCLINE>32</FUNCLINE>
+    <FUNCLINE>31</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Bus.h</FILENAME>
-      <LINE>50</LINE>
+      <LINE>49</LINE>
       <COLUMN>2</COLUMN>
     </SFA>
     <DEFECTCODE>26432</DEFECTCODE>
     <DESCRIPTION>If you define or delete any default operation in the type 'class Bus', define or delete them all (c.21).</DESCRIPTION>
     <FUNCTION>Bus::{dtor}</FUNCTION>
     <DECORATED>??1Bus@@QAE@XZ</DECORATED>
-    <FUNCLINE>50</FUNCLINE>
+    <FUNCLINE>49</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>c:\users\nicku\desktop\cppcon2019\consoleapplication5\consoleapplication5\</FILEPATH>
       <FILENAME>bus.h</FILENAME>
-      <LINE>53</LINE>
+      <LINE>52</LINE>
       <COLUMN>6</COLUMN>
     </SFA>
     <DEFECTCODE>26476</DEFECTCODE>
@@ -88,84 +102,56 @@
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Bus.h</FILENAME>
-      <LINE>55</LINE>
+      <LINE>54</LINE>
       <COLUMN>9</COLUMN>
     </SFA>
     <DEFECTCODE>26476</DEFECTCODE>
     <DESCRIPTION>Expression/symbol 'this-&gt;driver = d' uses a naked union 'union Driver' with multiple type pointers: Use variant instead (type.7).</DESCRIPTION>
     <FUNCTION>Bus::assignDriver</FUNCTION>
     <DECORATED>?assignDriver@Bus@@QAEXAATDriver@@@Z</DECORATED>
-    <FUNCLINE>53</FUNCLINE>
+    <FUNCLINE>52</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Bus.h</FILENAME>
-      <LINE>55</LINE>
+      <LINE>54</LINE>
       <COLUMN>12</COLUMN>
     </SFA>
     <DEFECTCODE>26476</DEFECTCODE>
     <DESCRIPTION>Expression/symbol 'd' uses a naked union 'union Driver' with multiple type pointers: Use variant instead (type.7).</DESCRIPTION>
     <FUNCTION>Bus::assignDriver</FUNCTION>
     <DECORATED>?assignDriver@Bus@@QAEXAATDriver@@@Z</DECORATED>
-    <FUNCLINE>53</FUNCLINE>
+    <FUNCLINE>52</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Bus.h</FILENAME>
-      <LINE>73</LINE>
-      <COLUMN>13</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>Bus::seatPassenger</FUNCTION>
-    <DECORATED>?seatPassenger@Bus@@QAEXHHVPerson@@@Z</DECORATED>
-    <FUNCLINE>71</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
-      <FILENAME>Bus.h</FILENAME>
-      <LINE>77</LINE>
-      <COLUMN>13</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>Bus::removePassenger</FUNCTION>
-    <DECORATED>?removePassenger@Bus@@QAEXHH@Z</DECORATED>
-    <FUNCLINE>75</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
-      <FILENAME>Bus.h</FILENAME>
-      <LINE>111</LINE>
+      <LINE>110</LINE>
       <COLUMN>5</COLUMN>
     </SFA>
     <DEFECTCODE>26812</DEFECTCODE>
     <DESCRIPTION>The enum type 'DriverType' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
     <FUNCTION>Bus::getDriverNumber</FUNCTION>
     <DECORATED>?getDriverNumber@Bus@@QAEHW4DriverType@@@Z</DECORATED>
-    <FUNCLINE>111</FUNCLINE>
+    <FUNCLINE>110</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
       <FILENAME>Bus.h</FILENAME>
-      <LINE>116</LINE>
+      <LINE>115</LINE>
       <COLUMN>10</COLUMN>
     </SFA>
     <DEFECTCODE>26476</DEFECTCODE>
     <DESCRIPTION>Expression/symbol 'this-&gt;driver' uses a naked union 'union Driver' with multiple type pointers: Use variant instead (type.7).</DESCRIPTION>
     <FUNCTION>Bus::getDriverNumber</FUNCTION>
     <DECORATED>?getDriverNumber@Bus@@QAEHW4DriverType@@@Z</DECORATED>
-    <FUNCLINE>111</FUNCLINE>
+    <FUNCLINE>110</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -194,23 +180,6 @@
     <FUNCTION>main</FUNCTION>
     <DECORATED>main</DECORATED>
     <FUNCLINE>15</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\</FILEPATH>
-      <FILENAME>Source.cpp</FILENAME>
-      <LINE>22</LINE>
-      <COLUMN>8</COLUMN>
-    </SFA>
-    <DEFECTCODE>26494</DEFECTCODE>
-    <DESCRIPTION>Variable 'd' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
-    <FUNCTION>main</FUNCTION>
-    <DECORATED>main</DECORATED>
-    <FUNCLINE>15</FUNCLINE>
-    <ADDITIONALINFO>
-      <targetSymbol>d</targetSymbol>
-    </ADDITIONALINFO>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

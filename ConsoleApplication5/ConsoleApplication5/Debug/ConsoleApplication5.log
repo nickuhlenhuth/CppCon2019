@@ -1,26 +1,3 @@
-﻿  Row.cpp
-  Seat.cpp
-  Source.cpp
-  Compiling...
-  Generating Code...
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(118): warning C4715: 'Bus::getDriverNumber': not all control paths return a value
+﻿  Source.cpp
+C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(117): warning C4715: 'Bus::getDriverNumber': not all control paths return a value
   ConsoleApplication5.vcxproj -> C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\Debug\ConsoleApplication5.exe
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Row.cpp(15): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Row.cpp(20): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Row.h(9): warning C26814: The const variable 'Row::rowCapacity' can be computed at compile-time. Consider using constexpr (con.5).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Seat.cpp(21): warning C26455: Default constructor may not throw. Declare it 'noexcept' (f.6).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(32): warning C26812: The enum type 'EngineType' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(36): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(39): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(42): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(50): warning C26432: If you define or delete any default operation in the type 'class Bus', define or delete them all (c.21).
-c:\users\nicku\desktop\cppcon2019\consoleapplication5\consoleapplication5\bus.h(53): warning C26476: Expression/symbol 'd' uses a naked union 'union Driver' with multiple type pointers: Use variant instead (type.7).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(55): warning C26476: Expression/symbol 'this->driver = d' uses a naked union 'union Driver' with multiple type pointers: Use variant instead (type.7).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(55): warning C26476: Expression/symbol 'd' uses a naked union 'union Driver' with multiple type pointers: Use variant instead (type.7).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(73): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(77): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(111): warning C26812: The enum type 'DriverType' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Bus.h(116): warning C26476: Expression/symbol 'this->driver' uses a naked union 'union Driver' with multiple type pointers: Use variant instead (type.7).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Engine.h(6): warning C26432: If you define or delete any default operation in the type 'struct Engine', define or delete them all (c.21).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Source.cpp(22): warning C26476: Expression/symbol 'd' uses a naked union 'union Driver' with multiple type pointers: Use variant instead (type.7).
-C:\Users\nicku\Desktop\CppCon2019\ConsoleApplication5\ConsoleApplication5\Source.cpp(22): warning C26494: Variable 'd' is uninitialized. Always initialize an object (type.5).

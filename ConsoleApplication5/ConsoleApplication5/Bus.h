@@ -7,7 +7,6 @@
 #include "Engine.h"
 #include <numeric>
 #include <fstream>
-#include <cassert>
 
 #define AVERAGE(range) std::accumulate(std::begin(range), std::end(range), 0.0f) / range.size()
 
@@ -32,13 +31,13 @@ public:
 	Bus(int numberRows, EngineType et)
 	{
 		switch (et) {
-		case small:
+		case EngineType::small:
 			engine = new SmallEngine;
 			break;
-		case medium:
+		case EngineType::medium:
 			engine = new MedEngine;
 			break;
-		case large:
+		case EngineType::large:
 			engine = new LargeEngine;
 			break;
 		}

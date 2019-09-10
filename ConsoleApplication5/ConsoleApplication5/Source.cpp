@@ -17,7 +17,7 @@ int main()
 	std::cout << "Hello CppCon 2019!\n";
 
 	Person driver("Bob", "Smith");
-	Bus bus(5, small);
+	Bus bus(5, EngineType::small);
 
 	Driver d;
 	Captain c{ 6 };
@@ -30,7 +30,7 @@ int main()
 	bus.seatPassenger(2, 2, p1);
 	bus.seatPassenger(1, 0, p2);
 
-	std::cout << "Driver is " << bus.getDriverNumber(captainDriver) << "\n";
+	std::cout << "Driver is Captain " << bus.getDriverNumber(captainDriver) << "\n";
 	
 	bus.printBus();
 	std::cout << "\n";
@@ -41,12 +41,12 @@ int main()
 	Robot r{ 42 };
 	d.robot = &r;
 	bus.assignDriver(d);
-	std::cout << "Driver is " << bus.getDriverNumber(robotDriver) << "\n";
+	std::cout << "Driver is Robot " << bus.getDriverNumber(robotDriver) << "\n";
 
 	bus.printBus();
 	bus.printBusToFile();
 	std::cout << "\n";
-	std::cout << bus.averagePassengersPerRow();
+	std::cout << "Avg per row " << bus.averagePassengersPerRow();
 	
 	return 0;
 }

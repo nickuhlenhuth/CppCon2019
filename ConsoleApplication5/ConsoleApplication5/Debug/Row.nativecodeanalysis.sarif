@@ -5,53 +5,9 @@
     {
       "results": [
         {
-          "ruleId": "26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///C:/Users/nicku/Desktop/CppCon2019/ConsoleApplication5/ConsoleApplication5/Row.cpp"
-                },
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 2,
-                  "endLine": 15,
-                  "endColumn": 12
-                }
-              },
-              "fullyQualifiedLogicalName": "public: void __thiscall Row::occupy(int,class Person)"
-            }
-          ]
-        },
-        {
-          "ruleId": "26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "fileLocation": {
-                  "uri": "file:///C:/Users/nicku/Desktop/CppCon2019/ConsoleApplication5/ConsoleApplication5/Row.cpp"
-                },
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 2,
-                  "endLine": 20,
-                  "endColumn": 12
-                }
-              },
-              "fullyQualifiedLogicalName": "public: void __thiscall Row::remove(int)"
-            }
-          ]
-        },
-        {
           "ruleId": "26814",
           "message": {
-            "text": "The const variable 'Row::rowCapacity' can be computed at compile-time. Consider using constexpr (con.5)."
+            "text": "The const variable 'rowCapacity' can be computed at compile-time. Consider using constexpr (con.5)."
           },
           "locations": [
             {
@@ -60,11 +16,12 @@
                   "uri": "file:///C:/Users/nicku/Desktop/CppCon2019/ConsoleApplication5/ConsoleApplication5/Row.h"
                 },
                 "region": {
-                  "startLine": 9,
-                  "startColumn": 26
+                  "startLine": 6,
+                  "startColumn": 25,
+                  "endLine": 6,
+                  "endColumn": 25
                 }
-              },
-              "fullyQualifiedLogicalName": "public: __thiscall Row::Row(int)"
+              }
             }
           ]
         }
@@ -77,7 +34,7 @@
       },
       "invocations": [
         {
-          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x004A3180 -il C:\\Users\\nicku\\AppData\\Local\\Temp\\_CL_68c5bcdbast -typedil -f Row.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1923 -D_MSC_FULL_VER=192328019 -D_MSC_BUILD=1 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\nicku\\Documents\\vcpkg\\installed\\x86-windows\\include -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++17 -FoDebug\\Row.obj -FdDebug\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset demoRuleset.ruleset -analyze:projectdirectory C:\\Users\\nicku\\Desktop\\CppCon2019\\ConsoleApplication5\\ConsoleApplication5 -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\nicku\\Desktop\\CppCon2019\\ConsoleApplication5\\ConsoleApplication5\\Include\\um"
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x004A3180 -il C:\\Users\\nicku\\AppData\\Local\\Temp\\_CL_5bed01b3ast -typedil -f Row.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -ZB64 -D_INTEGRAL_MAX_BITS=64 -Gs -pc \\:/ -D_MSC_VER=1923 -D_MSC_FULL_VER=192328019 -D_MSC_BUILD=1 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\nicku\\Documents\\vcpkg\\installed\\x86-windows\\include -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++17 -FoDebug\\Row.obj -FdDebug\\vc142.pdb -Gd -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -analyze:ruleset demoRuleset.ruleset -analyze:projectdirectory C:\\Users\\nicku\\Desktop\\CppCon2019\\ConsoleApplication5\\ConsoleApplication5 -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\Team Tools\\Static Analysis Tools\\\\Rule Sets -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Tools\\MSVC\\14.23.28019\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Preview\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\nicku\\Desktop\\CppCon2019\\ConsoleApplication5\\ConsoleApplication5\\Include\\um"
         }
       ],
       "files": {
@@ -3218,17 +3175,6 @@
             },
             "helpUri": ""
           },
-          "26446": {
-            "id": "26446",
-            "name": "",
-            "shortDescription": "",
-            "fullDescription": "",
-            "configuration": {
-              "enabled": true,
-              "defaultLevel": "warning"
-            },
-            "helpUri": ""
-          },
           "26439": {
             "id": "26439",
             "name": "",
@@ -3319,17 +3265,6 @@
           },
           "26454": {
             "id": "26454",
-            "name": "",
-            "shortDescription": "",
-            "fullDescription": "",
-            "configuration": {
-              "enabled": true,
-              "defaultLevel": "warning"
-            },
-            "helpUri": ""
-          },
-          "26455": {
-            "id": "26455",
             "name": "",
             "shortDescription": "",
             "fullDescription": "",
@@ -3671,28 +3606,6 @@
           },
           "26493": {
             "id": "26493",
-            "name": "",
-            "shortDescription": "",
-            "fullDescription": "",
-            "configuration": {
-              "enabled": true,
-              "defaultLevel": "warning"
-            },
-            "helpUri": ""
-          },
-          "28285": {
-            "id": "28285",
-            "name": "",
-            "shortDescription": "",
-            "fullDescription": "",
-            "configuration": {
-              "enabled": true,
-              "defaultLevel": "warning"
-            },
-            "helpUri": ""
-          },
-          "26494": {
-            "id": "26494",
             "name": "",
             "shortDescription": "",
             "fullDescription": "",
@@ -4650,6 +4563,17 @@
           },
           "28284": {
             "id": "28284",
+            "name": "",
+            "shortDescription": "",
+            "fullDescription": "",
+            "configuration": {
+              "enabled": true,
+              "defaultLevel": "warning"
+            },
+            "helpUri": ""
+          },
+          "28285": {
+            "id": "28285",
             "name": "",
             "shortDescription": "",
             "fullDescription": "",
